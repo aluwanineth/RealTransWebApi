@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  reltranscustomer.webapi:
+    image: ${DOCKER_REGISTRY-}reltranscustomerwebapi
+    build:
+      context: .
+      dockerfile: RelTransCustomer.WebApi/Dockerfile
